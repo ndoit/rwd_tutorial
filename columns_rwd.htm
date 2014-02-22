@@ -1,0 +1,82 @@
+<style>
+
+div {
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+    body {
+        font-family: Helvetica, Arial;
+        text-align: center;
+    }
+    .main{
+        width:80%;
+        margin: 0 auto;            
+        background-color: lightBlue;
+        height: 100%;
+        padding: 10px;
+    }
+    .header{
+        height: 20%;
+        font-size: 2em;
+        color: white;
+        background-color: gray;
+        padding: 10px;
+    }
+
+    .contentArea{
+        background-color: yellow;
+        height: 80%;
+        text-align:left;
+    }
+    .content{
+        float: left;
+        width: 30%; 
+        margin: 10px; 
+        background-color: lightGray;
+        padding: 10px;
+    } 
+    .contentHeader{
+        font-size: 1.5em;
+        padding-bottom: 5px;
+    }
+    .contentBody{
+    }
+
+    @media screen and (max-width: 800px) {
+          .header{
+              color: green;
+          }
+          .main {
+              width: 100%;
+              padding: 0px;  /* otherwise width 100% goes offscreen */
+          }
+      }
+
+    @media screen and (max-width: 640px) {
+          .header{
+              color: yellow;
+          }
+    } 
+</style>
+
+<body>
+    <div class="main">
+	<div class="header">Amazing OIT Web Application</div>
+        <div class="contentArea">
+	    <div class="content">
+                <div class="contentHeader">Drive Innovation</div>
+                <div class="contentBody">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </div>
+            </div>
+	    <div class="content">
+                <div class="contentHeader">Deliver Value</div>
+                <div class="contentBody">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d    o eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer    citation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+	    <div class="content">
+                <div class="contentHeader">Develop Talent</div>
+                <div class="contentBody">lorem ipsum dolor sit amet, consectetur adipisicing elit, sed d    o eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exer    citation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+            </div>
+        </div>
+    </div>
+</body>

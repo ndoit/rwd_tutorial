@@ -1,0 +1,41 @@
+// Place all the styles related to the index controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$font-big: 	3em;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
+
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+       -o-border-radius: $radius;
+          border-radius: $radius;
+}
+
+.main{
+   width: 400px;
+   height: 400px;
+   background-color: lightBlue;
+   padding: 10px;
+   /*@include border-radius(10px);*/
+}
+
+.main{
+
+    font-size: 1em;
+
+    .header{
+        font-size: $font-big;
+    }
+    .content{
+        font-color: orange;
+    }    
+
+}
